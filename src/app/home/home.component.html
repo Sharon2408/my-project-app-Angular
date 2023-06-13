@@ -1,0 +1,28 @@
+<p>home works!</p>
+<p>{{name}}</p>
+<p>{{name}}{{getDetils()}}</p>
+
+<h3 [innerText]="title"></h3>
+<!-- <button [disabled]="isDisabled" >hi man</button> -->
+<h3 [innerText]="inject"></h3>
+
+<img bind-src="img" alt="" height="100px" width="50px">
+<p [style.color]="color">fdddgdfgdfgdgdf</p>
+<img [src]="img" alt="" height="100px" width="50px">
+<!-- Event Binding -->
+
+<div [style.image]="img">
+    <h1>Single</h1>
+    <h3>Event Binding {{count}}</h3>
+    <h4>Count Value: {{count}}</h4>
+    <button  (click)="click()">Click Me!!!!!!!!!</button>
+    
+    <br><br>
+    <h1>Multiple</h1>
+    <button (click)="click()">Click Me!!!</button>
+    <p class="text-primary"> Max Value is {{largest(10,12)}}</p>
+</div>
+
+<style>
+   
+</style>
