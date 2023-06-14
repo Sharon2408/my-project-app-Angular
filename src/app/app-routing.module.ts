@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { FormComponent } from './form/form.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   {
@@ -17,6 +19,12 @@ const routes: Routes = [
   },
   {
     path:"timeline",component:TimelineComponent
+  },
+  {
+    path:"form",component:FormComponent
+  },
+  {
+    path:"signup",component:SignupComponent
   }
 
 ];

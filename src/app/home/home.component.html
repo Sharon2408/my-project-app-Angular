@@ -1,4 +1,3 @@
-<p>home works!</p>
 <p>{{name}}</p>
 <p>{{name}}{{getDetils()}}</p>
 
@@ -11,7 +10,7 @@
 <img [src]="img" alt="" height="100px" width="50px">
 <!-- Event Binding -->
 
-<div [style.color]="color">
+<div [style.]="color">
     <h1>Single</h1>
     <h3>Event Binding {{count}}</h3>
     <h4>Count Value: {{count}}</h4>
@@ -23,6 +22,33 @@
     <p class="text-primary"> Max Value is {{largest(10,12)}}</p>
 </div>
 
-<style>
-   
-</style>
+
+
+<!-- Event payload -->
+<input (input)="getvalue($event)">
+<b>Event Payload: {{value}}</b>
+<br>
+<!-- template Binding -->
+<input #val (input)="getvalue1(val)">
+<b>Template Binding: {{value1}}</b>
+<br>
+<!-- Key Event -->
+<input type="text" (keyup)="value2=$any($event.target).value">
+<b>KeyUp Event: {{value2}} </b>
+<br>
+<input type="text" (keyup.enter)="value3=$any($event.target).value">
+<b>KeyUp.enter Event: {{value3}} </b>
+<br>
+<input type="text" (keyup.control.shift.enter)="value4=$any($event.target).value">
+ <b> KeyUp.control.shift.enter Event: {{value4}} </b>
+ <br>
+ <input type="text" (keyup.enter)="value5=$any($event.target).value"
+           (keyup.escape)="$any($event.target).value=value5=''">
+<b>KeyUp.enter Event: {{value5}} press escape to clear </b>
+
+<!-- Two way Binding -->
+<br>
+<input type="text" name="value" [(ngModel)]="value6">
+<b>value=  {{value6}}</b>
+<br>
+<button (click)="clear()">Clear</button>

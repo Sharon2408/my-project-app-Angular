@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -12,6 +12,13 @@ import { TimelineModule } from 'primeng/timeline';
 import { TimelineComponent } from './timeline/timeline.component';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
+import { FormComponent } from './form/form.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { DataViewModule, DataViewLayoutOptions } from 'primeng/dataview';
+import { CheckboxModule } from 'primeng/checkbox';
+import { SignupComponent } from './signup/signup.component';
+import { ChartModule } from 'primeng/chart';
+import { ConfirmPopupModule } from 'primeng/confirmpopup';
 
 
 
@@ -22,8 +29,10 @@ import { CardModule } from 'primeng/card';
     NavbarComponent,
     AccordionComponent,
     TimelineComponent,
-    
-    
+    FormComponent,
+    SignupComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -32,8 +41,14 @@ import { CardModule } from 'primeng/card';
     BrowserAnimationsModule,
     TimelineModule,
     ButtonModule,
-    CardModule
-
+    CardModule,
+    InputTextModule,
+    FormsModule,
+    ReactiveFormsModule,
+    DataViewModule,
+    CheckboxModule,
+    ChartModule,
+   ConfirmPopupModule
   ],
   providers: [],
   bootstrap: [AppComponent]

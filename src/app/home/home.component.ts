@@ -39,4 +39,26 @@ largest(n1:number,n2:number):number {
   return Math.max(n1,n2)
   
 }
+// Event payload
+value=''
+getvalue(event:any){
+  this.value=(event.target as HTMLInputElement).value;
+
+}
+// Template reference
+value1=''
+getvalue1(val:any){
+  this.value1=val.value
+
+}
+
+value2=''
+value3=''
+value4=''
+value5=''
+value6=''
+clear(){
+  this.value6=''
+  
+}
 }
