@@ -6,7 +6,7 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { FormComponent } from './form/form.component';
 import { SignupComponent } from './signup/signup.component';
-
+import { BrowserComponent } from './browser/browser.component';
 const routes: Routes = [
   {
     path:"home", component:HomeComponent
@@ -25,6 +25,9 @@ const routes: Routes = [
   },
   {
     path:"signup",component:SignupComponent
+  },
+  {
+    path:"browser",component:BrowserComponent
   }
 
 ];

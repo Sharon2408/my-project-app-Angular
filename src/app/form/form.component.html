@@ -1,0 +1,78 @@
+<div class=" container d-flex">
+    <div id="acc" class="col">
+        <h3>Enter the Employee Details </h3>
+        <br>
+        <span class="p-float-label" id="">
+
+            <input pInputText id="id" (keyup.enter)="id=$any($event.target).value"
+                (keyup.escape)="$any($event.target).value=id=''" />
+
+            <label htmlFor="id" class="--primary-color">Employee ID</label>
+
+        </span>
+        <br>
+        <span class="p-float-label">
+
+            <input pInputText id="name" (keyup.enter)="name=$any($event.target).value"
+            (keyup.escape)="$any($event.target).value=name=''" />
+
+            <label htmlFor="name" class="--primary-color">Employee Name</label>
+        </span>
+        <br>
+        <span class="p-float-label">
+
+            <input pInputText id="age" (keyup.enter)="age=$any($event.target).value"
+            (keyup.escape)="$any($event.target).value=age=''" />
+
+            <label htmlFor="age" class="--primary-color">Employee Age</label>
+        </span>
+        <br>
+        <span class="p-float-label">
+
+            <input pInputText id="salary" (keyup.enter)="salary=$any($event.target).value"
+            (keyup.escape)="$any($event.target).value=salary=''" />
+
+            <label htmlFor="age" class="--primary-color">Employee Salary</label>
+        </span>
+        <br>
+        <span class="p-float-label">
+
+            <input pInputText id="location" (keyup.enter)="location=$any($event.target).value"
+            (keyup.escape)="$any($event.target).value=location=''" />
+
+            <label htmlFor="age" class="--primary-color">Employee Location</label>
+        </span>
+    </div>
+
+    <div class="col">
+        <h3 style="padding:5%;">Employee Details</h3>
+
+        <p>Employee ID : {{id}}</p>
+        <p>Employee Name : {{name}}</p>
+        <p>Employee Age : {{age}}</p>
+        <p> Employee Salary : {{salary}}</p>
+        <p> Employee Location : {{location}}</p>
+
+
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+    <div class="col">
+        <h1>Mouse Events</h1>
+        <label for="" (click)="click()">Single Click Me {{name1}}</label>
+        <br><br>
+         <label for="" (dblclick)="dblclick()">Double Click Me {{doubleclick}}</label> 
+         <br><br>
+         <label for="" (mousedown)="mdown()"> Click Me(mouse Down) {{mousedown}}</label> 
+         <br><br>
+         <label for="" (mouseup)="mup()"> Click Me(Mouse Up) {{mouseup}}</label> 
+         <br><br>
+         <label for="" (mouseover)="mhover()"> Click Me(Mouse hover) {{mousehover}}</label>
+         <br><br>
+         <label for="" (mouseenter)="menter()"> Click Me(Mouse Enter) {{mouseenter}}</label> 
+         <br><br>
+         <label for="" (mouseleave)="mleave()"> Click Me(Mouse Leave) {{mouseleave}}</label> 
+    </div>
+</div>
+</div>

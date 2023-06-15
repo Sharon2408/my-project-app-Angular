@@ -1,3 +1,44 @@
 
 
-<p-chart type="line" [data]="data" [options]="options"></p-chart>
+<!-- <p-chart type="line" [data]="data" [options]="options"></p-chart> -->
+
+
+
+
+<table class="table ">
+   
+<thead>
+    <th>Employee Id</th>
+    <th>Employee Name</th>
+    <th>Age</th>
+    <th>Salary</th>
+    <th>Location</th>
+    
+</thead>
+
+
+<tbody *ngFor="let x of Employee ">
+    <tr>
+        <th>{{x.EmployeeId}}</th>
+        <td>{{x.Employeename}}</td>
+        <td>{{x.Age}}</td>
+        <td>{{x.Salary}}</td>
+        <td>{{x.location}}</td>
+    </tr>
+    
+</tbody>
+</table>
+
+<div class="container"> 
+    <div class="row justify-content-around " >
+<div class="card mb-5" style="width: 18rem;" *ngFor="let x of studentData">
+    <img class="card-img-top" src="{{x.url}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{x.productname}}</h5>
+      <p class="card-text">Price: {{x.price}}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+</div>
+</div>

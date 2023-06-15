@@ -19,7 +19,8 @@ import { CheckboxModule } from 'primeng/checkbox';
 import { SignupComponent } from './signup/signup.component';
 import { ChartModule } from 'primeng/chart';
 import { ConfirmPopupModule } from 'primeng/confirmpopup';
-
+import { BrowserComponent } from './browser/browser.component';
+import {HttpClientModule} from '@angular/common/http'
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { ConfirmPopupModule } from 'primeng/confirmpopup';
     TimelineComponent,
     FormComponent,
     SignupComponent,
+    BrowserComponent,
 
 
   ],
@@ -48,7 +50,8 @@ import { ConfirmPopupModule } from 'primeng/confirmpopup';
     DataViewModule,
     CheckboxModule,
     ChartModule,
-   ConfirmPopupModule
+   ConfirmPopupModule,
+   HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
