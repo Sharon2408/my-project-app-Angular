@@ -1,11 +1,9 @@
-
-
 <!-- <p-chart type="line" [data]="data" [options]="options"></p-chart> -->
 
 
 
 
-<table class="table ">
+<!-- <table class="table ">
    
 <thead>
     <th>Employee Id</th>
@@ -28,8 +26,8 @@
     
 </tbody>
 </table>
-
-<div class="container"> 
+-->
+<!-- <div class="container"> 
     <div class="row justify-content-around " >
 <div class="card mb-5" style="width: 18rem;" *ngFor="let x of studentData">
     <img class="card-img-top" src="{{x.url}}" alt="Card image cap">
@@ -41,4 +39,70 @@
   </div>
 
 </div>
+</div>  -->
+
+
+
+
+
+
+<!-- <label for="" (click)="show()">HI</label>
+<p [hidden]="ishidden">HEllo</p> -->
+<br><br><br>
+
+<ng-container *ngFor="let x of user">
+    <div class="container"> 
+        <div class="row justify-content-around " >
+            <div class="col-3">
+    <p-panelMenu (click)="show()" [model]="items" [style]="{'width':'300px'}">
+    </p-panelMenu>
+    <p [hidden]="ishidden">User_name: {{x.id}}</p>
+    <p [hidden]="ishidden">Email_Id: {{x.Name}}</p>
+    <p [hidden]="ishidden">Gender: {{x.gender}}</p>
+    <p [hidden]="ishidden">Domain: {{x.domain}}</p>
 </div>
+</div>
+</div>
+</ng-container>
+
+    
+
+
+<!-- <div class="card">
+    <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" styleClass="mr-2" size="xlarge" shape="circle"></p-avatar>
+    </div> -->
+
+    <table class="table ">
+
+        <thead>
+            <th> Id</th>
+            <th> Name</th>
+            <th>Domain</th>
+            <th>Gender</th>
+        </thead>
+        <ng-container *ngFor=" let x of batch35 " >
+            <ng-container [ngSwitch]="x.gender">
+                <ng-container *ngSwitchCase="'male'">
+        <tbody >
+            <tr >
+                <td class="text-dark">{{x.id}}</td>
+                <td class="text-dark">{{x.Name}}</td>
+                <td class="text-dark">{{x.domain}}</td>
+                <td class="text-dark bg-primary">{{x.gender}}</td>
+            </tr>
+        </tbody>
+        </ng-container>
+        <ng-container *ngSwitchCase="'female'">
+            <tbody >
+                <tr >
+                    <td class="text-dark">{{x.id}}</td>
+                    <td class="text-dark">{{x.Name}}</td>
+                    <td class="text-dark">{{x.domain}}</td>
+                    <td class="text-dark bg-success">{{x.gender}}</td>
+                </tr>
+            </tbody>
+        </ng-container>
+    </ng-container>
+    </ng-container>
+    
+    </table>

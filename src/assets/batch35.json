@@ -1,0 +1,99 @@
+[
+    {
+        "id": 1,
+        "Name": "Arjun",
+        "gender": "male",
+        "domain":".NET/Angular"
+    },
+    {
+        "id": 2,
+        "Name": "Harshan",
+        "gender": "male",
+        "domain":".NET/Angular"
+    },
+    {
+        "id": 15,
+        "Name": "Ranita",
+        "gender": "female",
+        "domain":".NET/Angular"
+    },
+    {
+        "id": 3,
+        "Name": "Hemanth",
+        "gender": "male",
+        "domain":".NET/Angular"
+    },
+    {
+        "id": 11,
+        "Name": "Harita",
+        "gender": "female",
+        "domain":"PHP/React"
+    },
+    {
+        "id": 4,
+        "Name": "Arun",
+        "gender": "male",
+        "domain":".NET/Angular"
+    },
+    {
+        "id": 5,
+        "Name": "Darshan",
+        "gender": "male",
+        "domain":"Node/React"
+    },
+    {
+        "id": 14,
+        "Name": "Yamini",
+        "gender": "female",
+        "domain":"PHP/React"
+    },
+    {
+        "id": 6,
+        "Name": "Srikanth",
+        "gender": "male",
+        "domain":".NET/Angular"
+    },
+    {
+        "id": 7,
+        "Name": "Vignesh",
+        "gender": "male",
+        "domain":".NET/Angular"
+    },
+    {
+        "id": 12,
+        "Name": "Harishmitha",
+        "gender": "female",
+        "domain":"PHP/Vue"
+    },
+    {
+        "id": 8,
+        "Name": "Shiva",
+        "gender": "male",
+        "domain":".NET/Angular"
+    },
+    {
+        "id": 9,
+        "Name": "Sharon",
+        "gender": "male",
+        "domain":"PHP/Angular"
+    },
+    {
+        "id": 13,
+        "Name": "Ranita",
+        "gender": "female",
+        "domain":"G2Tech"
+    },
+    {
+        "id": 10,
+        "Name": "Karthik",
+        "gender": "male",
+        "domain":"React"
+    },
+   
+    {
+        "id": 16,
+        "Name": "Aksharaa",
+        "gender": "female",
+        "domain":"Designing"
+    }
+]

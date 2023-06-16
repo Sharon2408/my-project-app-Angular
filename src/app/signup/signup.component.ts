@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { MenuItem } from 'primeng/api';
+
 @Component({
     selector: 'app-signup',
     templateUrl: './signup.component.html',
@@ -7,74 +9,25 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SignupComponent implements OnInit {
     data: any;
-studentData:any;
-url:string='/assets/products.json'
-    options: any;
-    constructor(private http: HttpClient){}
-    ngOnInit() {
-        const documentStyle = getComputedStyle(document.documentElement);
-        const textColor = documentStyle.getPropertyValue('--text-color');
-        const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
-        const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
-this.http.get(this.url).subscribe(res=>{this.studentData=res})
-        this.data = {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-            datasets: [
-                {
-                    type: 'line',
-                    label: 'Dataset 1',
-                    borderColor: documentStyle.getPropertyValue('--blue-500'),
-                    borderWidth: 2,
-                    fill: false,
-                    tension: 0.4,
-                    data: [50, 25, 12, 48, 56, 76, 42]
-                },
-                {
-                    type: 'bar',
-                    label: 'Dataset 2',
-                    backgroundColor: documentStyle.getPropertyValue('--green-500'),
-                    data: [21, 84, 24, 75, 37, 65, 34],
-                    borderColor: 'white',
-                    borderWidth: 2
-                },
-                {
-                    type: 'bar',
-                    label: 'Dataset 3',
-                    backgroundColor: documentStyle.getPropertyValue('--orange-500'),
-                    data: [41, 52, 24, 74, 23, 21, 32]
-                }
-            ]
-        };
+batch35:any;
+url:string='/assets/batch35.json'
 
-        this.options = {
-            maintainAspectRatio: false,
-            aspectRatio: 0.6,
-            plugins: {
-                legend: {
-                    labels: {
-                        color: textColor
-                    }
-                }
+userdata: any;
+user:any;
+url1:string='/assets/user.json'
+    constructor(private http: HttpClient){}
+    items: MenuItem[] = [];
+    ngOnInit() {
+        this.items = [
+            {
+                label: 'File',
+                icon: 'pi pi-fw pi-file',
+               
             },
-            scales: {
-                x: {
-                    ticks: {
-                        color: textColorSecondary
-                    },
-                    grid: {
-                        color: surfaceBorder
-                    }
-                },
-                y: {
-                    ticks: {
-                        color: textColorSecondary
-                    },
-                    grid: {
-                        color: surfaceBorder
-                    }
-                }
-            }
-        };
+            
+        ];
+ this.http.get(this.url).subscribe(res=>{this.batch35=res})
+   this.http.get(this.url1).subscribe(str=>{this.user=str})     
     }
     Employee: Course[] = [
         {
@@ -148,6 +101,14 @@ this.http.get(this.url).subscribe(res=>{this.studentData=res})
             location: 'Cbe'
         }
     ]
+
+ishidden=true
+show(){
+    this.ishidden=!this.ishidden
+}
+
+
+
 }
 class Course {
 

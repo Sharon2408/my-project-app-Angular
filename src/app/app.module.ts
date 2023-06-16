@@ -21,6 +21,7 @@ import { ChartModule } from 'primeng/chart';
 import { ConfirmPopupModule } from 'primeng/confirmpopup';
 import { BrowserComponent } from './browser/browser.component';
 import {HttpClientModule} from '@angular/common/http'
+import { PanelMenuModule } from 'primeng/panelmenu';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import {HttpClientModule} from '@angular/common/http'
     CheckboxModule,
     ChartModule,
    ConfirmPopupModule,
-   HttpClientModule
+   HttpClientModule,
+   PanelMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
